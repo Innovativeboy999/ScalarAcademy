@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ScalarAcademy</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="address">Address</string>
+    <string name="phone">Phone</string>
+    <string name="user_id">UserId</string>
+
+    <string name="album_name">Album Name</string>
+
+
+</resources>

@@ -1,6 +1,7 @@
 package com.example.scalaracademy.data.api
 
 import com.example.scalaracademy.data.models.albummodels.AlbumResponseItem
+import com.example.scalaracademy.data.models.photosDataSource.PhotoResponseItem
 import com.example.scalaracademy.data.models.usermodels.UserResponseItem
 import io.reactivex.Single
 import retrofit2.http.GET
@@ -16,5 +17,5 @@ interface ScalarInterface {
 
     //https://jsonplaceholder.typicode.com/photos?albumId=2
     @GET("photos")
-    fun getPhotos(@Query("albumId") userId : Int)
+    fun getPhotos(@Query("albumId") userId : Int) : Single<List<PhotoResponseItem>>
 }
